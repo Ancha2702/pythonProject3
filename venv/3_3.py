@@ -24,5 +24,4 @@ for word, num in sorted_dct.items():
         continue
     else:
         break
-
 print(f'Десять популярных слов и их количество в тексте:\n{result}')
