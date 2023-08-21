@@ -9,7 +9,6 @@
 import time
 from datetime import datetime
 
-
 class MyStr(str):
     """
     MyStr - class, наследует все возможности класса str
