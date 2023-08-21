@@ -47,8 +47,6 @@ print(m1)
 print()
 print(m2)
 print()
-
 print(m1 + m2)
 print()
-
 print(m1 * m2)
