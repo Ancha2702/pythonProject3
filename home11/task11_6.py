@@ -6,7 +6,7 @@
 """
 
 class Rectangle:
-
+    """ Класс Rectangle сравнивает прямоугольники по площади, получает площадь и периметр прямоугольника, а также складывает и вычитает прямоугольники"""
     def __init__(self, side_a, side_b=0):
         self.side_a = side_a
         if side_b == 0:
@@ -20,11 +20,23 @@ class Rectangle:
         return self.side_a * self.side_b
 
     def __add__(self, other):
+        """
+            Сложение прямоугольников.Периметры исходных прямоугольников
+            :param self:
+            :param other:
+            :return: экземпляр класса Rectangle после сложения
+            """
         # (self.side_a + other.side_a, self.side_b + other.side_b)
         res = self.get_perimeter() + other.get_perimeter()
         return Rectangle(res)
 
     def __sub__(self, other):
+        """
+            Вычитание прямоугольников- периметры исходных прямоугольников
+            :param self:
+            :param other:
+            :return: экземпляр класса Rectangle после вычитания
+            """
         res = abs(self.get_perimeter() - other.get_perimeter())
         return Rectangle(res)
 
