@@ -13,6 +13,7 @@ class Limit(Exception):
 
     def __str__(self):
         return f'Функция может принимать значения от {self.DOWN} до {self.UP}\n Вы ввели {self.a, self.b, self.c}'
+
 def quadrs(a, b, c):
     try:
         try:
